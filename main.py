@@ -27,11 +27,11 @@ def main():
                         help='Directory of image files.')
     parser.add_argument('--out', '-o', default='out_models',
                         help='Directory to output the result')
-    parser.add_argument('--model', '-m', default='./out_models/G',
+    parser.add_argument('--model', '-m', default='',
                         help='Resume the weights from model')
-    parser.add_argument('--dis', '-d', default='./out_models/D',
+    parser.add_argument('--dis', '-d', default='',
                         help='Resume the weights from discriminator')
-    parser.add_argument('--resume', '-r', default='./out_models/R',
+    parser.add_argument('--resume', '-r', default='',
                         help='Resume the training from snapshot')
     parser.add_argument('--snapshot_interval', type=int, default=500,
                         help='Interval of snapshot')# for each 500 iterations, save the model

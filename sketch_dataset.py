@@ -7,7 +7,7 @@ class SketchDataset(dataset_mixin.DatasetMixin):
     def __init__(self, dataDir='./dataset/sketch', size=384, train=True):
         print("load dataset start")
         if train:
-            self.dataDir = os.path.join(dataDir,'train3')
+            self.dataDir = os.path.join(dataDir,'train')
         else:
             self.dataDir = os.path.join(dataDir,'val')
         print("    from: %s"%self.dataDir)

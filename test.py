@@ -95,7 +95,7 @@ args = parser.parse_args()
     
 if args.model != None:
     # serializers.load_npz(modelpath, model)
-    serializers.load_npz('model_iter_39000.npz', model)
+    serializers.load_npz('./models/model_iter_39000.npz', model)
     # serializers.load_npz(args.model, model)
 
 if args.gpu >= 0:
