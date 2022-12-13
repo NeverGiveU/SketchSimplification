@@ -1,9 +1,22 @@
 # Perceptual-Aware Sketch Simplification Based on Integrated VGG Layers
 
+## Data
+Prepare your dataset like the following structure.
+```
+└─dataset
+  ├─train
+  | ├─img-xxx.jpg
+  | ├─label-xxx.jpg
+  | └─...
+  └─val
+    ├─xxx.jpg
+    └─...
+```
+
 ## Testing
 ```python
 mkdir results
-python test.py --img_fn ./dataset/val3 --out_fn ./results
+python test.py --img_fn ./dataset/val --out_fn ./results
 ```
 Results of different scales `{0.50, 0.75, 1.0, 1.25}` can be found in `./results`.
 
